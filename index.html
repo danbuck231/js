@@ -22,17 +22,7 @@
     {
    window.open("zadanie5_buc.html","okienko_z5","toolbar=no,directories=no,menubar=no,height=auto,width=auto");
     }
-   function WinClose() 
-    {
-    window.close()
-    }
     </script>
-    <script>
-    function okno_zamknij() 
-    {
-    window.close()
-    }
-  </script>
     </head>
    <body>
     <form>
@@ -44,7 +34,7 @@
     <input type="button" name="zadanie3" value="zadanie3-bucki" onclick="WinOpen_z3(' ')">
     <input type="button" name="zadanie4" value="zadanie4-bucki" onclick="WinOpen_z4(' ')">
     <input type="button" name="zadanie5" value="zadanie5-bucki" onclick="WinOpen_z5(' ')">
-    <input type="button" name="zamknij" value="zamknij" onclick="okno_zamknij()">
+    <input type="button" name="zamknij" value="zamknij" onclick="window.close()">
     </center>
     </form>
       </body>
