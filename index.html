@@ -1,41 +1,57 @@
+
 <html>
  <head>
  <title>Bucki 2p</title>
  <script language="JavaScript">
-  function WinOpen_z1()
-    {
-   window.open("z1_buck.html","okienko_z1","toolbar=no,directories=no,menubar=no");
-    }
-    function WinOpen_z2()
-    {
-   window.open("z2_buck.html","okienko_z2","toolbar=no,directories=no,menubar=no");
-    }
-    function WinOpen_z3()
-    {
-   window.open("obraz.html","okienko_z3","toolbar=no,directories=no,menubar=no");
-    }
-   function WinOpen_z4()
-    {
-   window.open("zadanie4_buck.html","okienko_z4","toolbar=no,directories=no,menubar=no");
-    }
-  function WinOpen_z5()
-    {
-   window.open("zadanie5_buc.html","okienko_z5","toolbar=no,directories=no,menubar=no,height=auto,width=auto");
-    }
+   function WinOpen(arg) {
+            window.open(`${arg}.html`, "okienko", "toolbar=no,directories=no,menubar=no,height=auto,width=auto,top=auto,left=auto");
+        }
+
     </script>
     </head>
    <body>
     <form>
+      <center>
       <script>
-         document.write("Szkielet zaliczeniowy JavaScript Daniel Bucki klasa 2P<br>".fontcolor("red").bold().fontsize(6));
+         document.write("Szkielet zaliczeniowy JavaScript Daniel Bucki klasa 2P<br>".fontcolor("red").bold().fontsize(9));
       </script>
-    <input type="button" name="zadanie1" value="zadanie1-bucki" onclick="WinOpen_z1(' ')">
-    <input type="button" name="zadanie2" value="zadanie2-bucki" onclick="WinOpen_z2(' ')"> 
-    <input type="button" name="zadanie3" value="zadanie3-bucki" onclick="WinOpen_z3(' ')">
-    <input type="button" name="zadanie4" value="zadanie4-bucki" onclick="WinOpen_z4(' ')">
-    <input type="button" name="zadanie5" value="zadanie5-bucki" onclick="WinOpen_z5(' ')">
-    <input type="button" name="zamknij" value="zamknij" onclick="window.close()">
-    </center>
+    <input type="button" name="zadanie1" value="zadanie1-bucki" onclick="WinOpen('z1_buck')">
+    <input type="button" name="zadanie2" value="zadanie2-bucki" onclick="WinOpen('z2_buck')"> 
+    <input type="button" name="zadanie3" value="zadanie3-bucki" onclick="WinOpen('zadanie3_buck')">
+    <input type="button" name="zadanie4" value="zadanie4-bucki" onclick="WinOpen('zadanie4_buck')">
+    <input type="button" name="zadanie5" value="zadanie5-bucki" onclick="WinOpen('zadanie5_buck')">
+    <input type="button" name="zadanie6" value="zadanie6-bucki" onclick="WinOpen('zadanie6_buck')">
+    <input type="button" name="zadanie7" value="zadanie7-bucki" onclick="WinOpen('zadanie7_buck')">
+    <input type="button" name="zadanie8" value="zadanie8-bucki" onclick="WinOpen('zadanie8_buck')">
+    <input type="button" name="zadanie9" value="zadanie9-bucki" onclick="WinOpen('zadanie9_buck')">
+    <input type="button" name="zadanie10" value="zadanie10-bucki" onclick="WinOpen('zadanie10_buck')">
+    <input type="button" name="zadanie11" value="zadanie11-bucki" onclick="WinOpen('zadanie11_buck')">
+    <input type="button" name="zadanie12" value="zadanie12-bucki" onclick="WinOpen('zadanie12_buck')">
+    <input type="button" name="zadanie13" value="zadanie13-bucki" onclick="WinOpen('zadanie13_buck')">
+    <input type="button" name="zadanie14" value="zadanie14-bucki" onclick="WinOpen('zadanie14_buck')">
+    <input type="button" name="zadanie15" value="zadanie15-bucki" onclick="WinOpen('zadanie15_buck')">
+    <input type="button" name="zadanie16" value="zadanie16-bucki" onclick="WinOpen('zadanie16_buck')">
+    <input type="button" name="zadanie17" value="tba" onclick="WinOpen('zadanie17_buck')">
+    <input type="button" name="zadanie18" value="zadanie18-bucki" onclick="WinOpen('zadanie18_buck')">
+    
     </form>
+  </center>
+
+    <script>
+      document.write("<br>Kody<br>".fontcolor("red").bold().fontsize(9));
+   </script>
+   
+   <center>
+   <form>
+   <input type="button" name="zadanie11-kod" value="zadanie11-bucki-kod" onclick="WinOpen('zadanie11_buc_KOD')">
+   <input type="button" name="zadanie12-kod" value="zadanie12-bucki-kod" onclick="WinOpen('zadanie12_buc_KOD')">
+   <input type="button" name="zadanie13-kod" value="zadanie13-bucki-kod" onclick="WinOpen('zadanie13_buc_KOD')">
+   <input type="button" name="zadanie14-kod" value="zadanie14-bucki-kod" onclick="WinOpen('zadanie14_buc_KOD')">
+   <input type="button" name="zadanie15-kod" value="zadanie15-bucki-kod" onclick="WinOpen('zadanie15_buc_KOD')">
+   <input type="button" name="zadanie16-kod" value="zadanie16-bucki-kod" onclick="WinOpen('zadanie16_buc_KOD')">
+  <br><input type="button" name="zamknij" value="zamknij" onclick="window.close()">
+  
+</form>
+</center>
       </body>
    </html>
