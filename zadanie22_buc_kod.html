@@ -1,0 +1,49 @@
+Zadanie 22-KOD<br>
+<textarea name="nazwa" cols="95" rows="50" readonly>
+    <html>
+        <head>
+         <script language="JavaScript">
+        function pole_bucki(a_buc,b_buc)
+        {
+         a=parseFloat(a_buc);
+         b=parseFloat(b_buc);
+         pole=a*b;
+         document.getElementsByName('pole')[0].value=pole.toFixed(2); /* na dokument */
+         alert("pole="+pole.toFixed(2)+" cm^2"); /*do okna Alert */
+         pokaz1.innerHTML="pole="+pole.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+        }
+        function obwod_bucki(a_buc,b_buc)
+        {
+         a=parseFloat(a_buc);
+         b=parseFloat(b_buc)
+         obwod=2*a+2*b;
+         document.getElementsByName('obwod')[0].value=obwod.toFixed(2);
+         alert("obwód="+obwod.toFixed(2)+" cm");
+         pokaz2.innerHTML="obwód="+obwod.toFixed(2)+"cm";
+        }
+         </script>
+        </head>
+        <body>
+        Obliczanie pola i obwodu prostokąta
+        <br> <br>
+        <form name="formularz" action="..." onsubmit="pole_bucki(this.a_buc.value,this.b_buc.value);
+        obwod_bucki(this.a_buc.value,this.b_buc.value);return false">
+         Podaj a=
+         <input size="6" name="a_buc">
+         Podaj b=
+         <input size="6" name="b_buc">
+         <br> <br>
+         <input TYPE="submit" Value="oblicz" >
+         <br> <br>
+         pole=
+         <input size="6" name="pole">
+         obwód=
+         <input size="6" name="obwod">
+        </form>
+        <table>
+         <tr id="pokaz1"></tr>
+         <tr id="pokaz2"></tr>
+        </table>
+        </body>
+        </html>
+</textarea>
